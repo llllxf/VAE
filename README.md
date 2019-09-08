@@ -1,1 +1,1 @@
-# VAE-
+# VAE-learning
