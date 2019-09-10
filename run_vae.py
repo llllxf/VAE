@@ -229,14 +229,14 @@ def main(args):
         x_PRR = test_data[0:PRR.n_tot_imgs, :]
 
         x_PRR_img = x_PRR.reshape(PRR.n_tot_imgs, IMAGE_SIZE_MNIST, IMAGE_SIZE_MNIST)
-        PRR.save_images(x_PRR_img, name='input.jpg')
+        PRR.save_images(x_PRR_img, name='input.png')
 
         if ADD_NOISE:
             x_PRR = x_PRR * np.random.randint(2, size=x_PRR.shape)
             x_PRR += np.random.randint(2, size=x_PRR.shape)
 
             x_PRR_img = x_PRR.reshape(PRR.n_tot_imgs, IMAGE_SIZE_MNIST, IMAGE_SIZE_MNIST)
-            PRR.save_images(x_PRR_img, name='input_noise.jpg')
+            PRR.save_images(x_PRR_img, name='input_noise.png')
         # Plot for manifold learning result
     if PMLR and dim_z == 2:
 

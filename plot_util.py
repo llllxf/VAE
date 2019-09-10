@@ -22,7 +22,7 @@ class Plot_Reproduce_Performance():
 
         self.resize_factor = resize_factor
 
-    def save_images(self, images, name='result.jpg'):
+    def save_images(self, images, name='result.png'):
         images = images.reshape(self.n_img_x*self.n_img_y, self.img_h, self.img_w)
         plt.savefig(self.DIR + "/"+name, self._merge(images, [self.n_img_y, self.n_img_x]))
 
