@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764d4dc5-b743-4c40-afcd-6efdd2d21174" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/run_vae.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_vae.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_vae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="242" column="24" selection-start-line="242" selection-start-column="24" selection-end-line="242" selection-end-column="24" />
+            <state relative-caret-position="251">
+              <caret line="238" column="20" selection-start-line="238" selection-start-column="16" selection-end-line="238" selection-end-column="20" />
               <folding>
                 <element signature="e#24#47#0" expanded="true" />
               </folding>
@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="304">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -73,6 +73,7 @@
     <findStrings>
       <find>vae</find>
       <find>unit8</find>
+      <find>save</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,8 +84,8 @@
       <list>
         <option value="$PROJECT_DIR$/mnist_data.py" />
         <option value="$PROJECT_DIR$/vae_tensorflow.py" />
-        <option value="$PROJECT_DIR$/plot_util.py" />
         <option value="$PROJECT_DIR$/run_vae.py" />
+        <option value="$PROJECT_DIR$/plot_util.py" />
       </list>
     </option>
   </component>
@@ -176,18 +177,18 @@
       <updated>1567933027402</updated>
       <workItem from="1567933029251" duration="15768000" />
       <workItem from="1568026299869" duration="3735000" />
-      <workItem from="1568102989359" duration="4936000" />
+      <workItem from="1568102989359" duration="5094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24439000" />
+    <option name="totallyTimeSpent" value="24597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="596" y="0" width="844" height="900" extended-state="6" />
+    <frame x="654" y="0" width="786" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.037406486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.04032258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,22 +262,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_util.py">
+    <entry file="file://$PROJECT_DIR$/run_vae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="251">
+          <caret line="238" column="20" selection-start-line="238" selection-start-column="16" selection-end-line="238" selection-end-column="20" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#24#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_vae.py">
+    <entry file="file://$PROJECT_DIR$/plot_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="242" column="24" selection-start-line="242" selection-start-column="24" selection-end-line="242" selection-end-column="24" />
+        <state relative-caret-position="304">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
-            <element signature="e#24#47#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
