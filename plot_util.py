@@ -33,13 +33,14 @@ class Plot_Reproduce_Performance():
         h, w = images.shape[1], images.shape[2]
         h_ = int(h*self.resize_factor)
         w_ = int(w*self.resize_factor)
-        img = np.zeros(h_*size[0],w_*size[1],dtype=np.int)
+        #s = ([h_*size[0],w_*size[1]])
+        img = np.zeros([h_*size[0],w_*size[1]])
 
         for idx, sub_image in enumerate(images):
             i = int(idx%size[1])
             j = int(idx / size[1])
 
-            image_ = Image.open(sub_image).reize(w_,h_,interp='bicubic')
+            image_ = Image.fromarray(np.uint8(sub_image)).resize(w_,h_,interp='bicubic')
 
             img[j*h_:j*h_+h_, i*w_:i*w_+w_] = image_
 
@@ -96,7 +97,7 @@ class Plot_Manifold_Learning_Result():
             i = int(idx % size[1])
             j = int(idx / size[1])
 
-            image_ = Image.open(image).reize(w_, h_,interp='bicubic')
+            image_ = Image.fromarray(np.uint8(image)).resize(w_, h_,interp='bicubic')
             #image_ = imresize(image, size=(w_, h_), interp='bicubic')
 
             img[j * h_:j * h_ + h_, i * w_:i * w_ + w_] = image_
