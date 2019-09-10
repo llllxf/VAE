@@ -29,10 +29,11 @@ class Plot_Reproduce_Performance():
 
 
     def _merge(self, images, size):
+
         h, w = images.shape[1], images.shape[2]
         h_ = int(h*self.resize_factor)
         w_ = int(w*self.resize_factor)
-        img = np.zeros(h_*size[0],w_*size[1])
+        img = np.zeros(h_*size[0],w_*size[1],dtype=np.int)
 
         for idx, sub_image in enumerate(images):
             i = int(idx%size[1])

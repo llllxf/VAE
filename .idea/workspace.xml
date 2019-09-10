@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="764d4dc5-b743-4c40-afcd-6efdd2d21174" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/plot_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_vae.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_vae.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_vae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="231" column="20" lean-forward="true" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="20" />
+            <state relative-caret-position="351">
+              <caret line="32" column="58" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="58" />
               <folding>
                 <element signature="e#24#47#0" expanded="true" />
               </folding>
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            <state relative-caret-position="379">
+              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -178,18 +177,18 @@
       <updated>1567933027402</updated>
       <workItem from="1567933029251" duration="15768000" />
       <workItem from="1568026299869" duration="3735000" />
-      <workItem from="1568102989359" duration="5575000" />
+      <workItem from="1568102989359" duration="6637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25078000" />
+    <option name="totallyTimeSpent" value="26140000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="654" y="0" width="786" height="900" extended-state="6" />
+    <frame x="504" y="0" width="936" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.04032258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.033557046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -265,8 +264,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run_vae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="231" column="20" lean-forward="true" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="20" />
+        <state relative-caret-position="351">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="58" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
           </folding>
@@ -275,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        <state relative-caret-position="379">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
