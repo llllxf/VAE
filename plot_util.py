@@ -40,7 +40,7 @@ class Plot_Reproduce_Performance():
             i = int(idx%size[1])
             j = int(idx / size[1])
 
-            image_ = Image.fromarray(np.uint8(sub_image)).resize(w_,h_,interp='bicubic')
+            image_ = Image.fromarray(np.uint8(sub_image)).resize(w_,h_)
 
             img[j*h_:j*h_+h_, i*w_:i*w_+w_] = image_
 
@@ -97,19 +97,30 @@ class Plot_Manifold_Learning_Result():
             i = int(idx % size[1])
             j = int(idx / size[1])
 
-            image_ = Image.fromarray(np.uint8(image)).resize(w_, h_,interp='bicubic')
+            image_ = Image.fromarray(np.uint8(image)).resize(w_, h_)
             #image_ = imresize(image, size=(w_, h_), interp='bicubic')
 
             img[j * h_:j * h_ + h_, i * w_:i * w_ + w_] = image_
 
         return img
 
+    # borrowed from https://gist.github.com/jakevdp/91077b0cae40f8f8244a
+    def discrete_cmap(N, base_cmap=None):
+        """Create an N-bin discrete colormap from the specified input map"""
 
+        # Note that if base_cmap is a string or None, you can simply do
+        # return plt.cm.get_cmap(base_cmap, N)
+        # The following works for string, None, or a colormap instance:
+
+        base = plt.cm.get_cmap(base_cmap)
+        color_list = base(np.linspace(0, 1, N))
+        cmap_name = base.name + str(N)
+        return base.from_list(cmap_name, color_list, N)
 
     def save_scattered_image(self, z, id, name='scattered_image.jpg'):
         N = 10
         plt.figure(figsize=(8, 6))
-        plt.scatter(z[:, 0], z[:, 1], c=np.argmax(id, 1), marker='o', edgecolor='none', cmap=discrete_cmap(N, 'jet'))
+        plt.scatter(z[:, 0], z[:, 1], c=np.argmax(id, 1), marker='o', edgecolor='none', cmap=self.discrete_cmap(N, 'jet'))
         plt.colorbar(ticks=range(N))
         axes = plt.gca()
         axes.set_xlim([-self.z_range - 2, self.z_range + 2])
@@ -117,18 +128,7 @@ class Plot_Manifold_Learning_Result():
         plt.grid(True)
         plt.savefig(self.DIR + "/" + name)
 
-    # borrowed from https://gist.github.com/jakevdp/91077b0cae40f8f8244a
-    def discrete_cmap(N, base_cmap=None):
-        """Create an N-bin discrete colormap from the specified input map"""
 
-        # Note that if base_cmap is a string or None, you can simply do
-        #    return plt.cm.get_cmap(base_cmap, N)
-        # The following works for string, None, or a colormap instance:
-
-        base = plt.cm.get_cmap(base_cmap)
-        color_list = base(np.linspace(0, 1, N))
-        cmap_name = base.name + str(N)
-        return base.from_list(cmap_name, color_list, N)
 
 
 
