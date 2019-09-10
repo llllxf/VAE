@@ -223,7 +223,7 @@ def main(args):
     """ training """
 
     if PRR:
-        PRR = plot_utils.Plot_Reproduce_Performance(RESULTS_DIR, PRR_n_img_x, PRR_n_img_y, IMAGE_SIZE_MNIST,
+        PRR = plot_util.Plot_Reproduce_Performance(RESULTS_DIR, PRR_n_img_x, PRR_n_img_y, IMAGE_SIZE_MNIST,
                                                     IMAGE_SIZE_MNIST, PRR_resize_factor)
 
         x_PRR = test_data[0:PRR.n_tot_imgs, :]
@@ -240,7 +240,7 @@ def main(args):
         # Plot for manifold learning result
     if PMLR and dim_z == 2:
 
-        PMLR = plot_utils.Plot_Manifold_Learning_Result(RESULTS_DIR, PMLR_n_img_x, PMLR_n_img_y, IMAGE_SIZE_MNIST,
+        PMLR = plot_util.Plot_Manifold_Learning_Result(RESULTS_DIR, PMLR_n_img_x, PMLR_n_img_y, IMAGE_SIZE_MNIST,
                                                             IMAGE_SIZE_MNIST, PMLR_resize_factor, PMLR_z_range)
 
         x_PMLR = test_data[0:PMLR_n_samples, :]
