@@ -6,6 +6,7 @@ import vae_tensorflow
 import glob
 import argparse
 import mnist_data
+import plot_util
 
 IMAGE_SIZE_MNIST = 28
 def parse_args():
