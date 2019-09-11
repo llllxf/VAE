@@ -24,7 +24,10 @@ class Plot_Reproduce_Performance():
 
     def save_images(self, images, name='result.png'):
         images = images.reshape(self.n_img_x*self.n_img_y, self.img_h, self.img_w)
-        plt.savefig(self.DIR + "/"+name, self._merge(images, [self.n_img_y, self.n_img_x]))
+        image_ = Image.fromarray(np.uint8(self._merge(images, [self.n_img_y, self.n_img_x])))
+        image_.save(self.DIR + "/"+name)
+
+        #plt.savefig(self.DIR + "/"+name, self._merge(images, [self.n_img_y, self.n_img_x]))
 
 
 
@@ -83,7 +86,9 @@ class Plot_Manifold_Learning_Result():
 
     def save_images(self, images, name='result.jpg'):
         images = images.reshape(self.n_img_x * self.n_img_y, self.img_h, self.img_w)
-        plt.savefig(self.DIR + "/" + name, self._merge(images, [self.n_img_y, self.n_img_x]))
+        image_ = Image.fromarray(np.uint8(self._merge(images, [self.n_img_y, self.n_img_x])))
+        image_.save(self.DIR + "/" + name)
+        #plt.savefig(self.DIR + "/" + name, self._merge(images, [self.n_img_y, self.n_img_x]))
 
     def _merge(self, images, size):
         h, w = images.shape[1], images.shape[2]
