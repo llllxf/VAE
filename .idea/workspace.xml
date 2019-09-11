@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="42" column="70" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
+            <state relative-caret-position="333">
+              <caret line="99" column="81" selection-start-line="99" selection-start-column="81" selection-end-line="99" selection-end-column="81" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -90,10 +90,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="19" />
-    <option name="y" value="284" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="x" value="1347" />
+    <option name="width" value="93" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -177,12 +176,12 @@
       <updated>1567933027402</updated>
       <workItem from="1567933029251" duration="15768000" />
       <workItem from="1568026299869" duration="3735000" />
-      <workItem from="1568102989359" duration="8102000" />
+      <workItem from="1568102989359" duration="8709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27605000" />
+    <option name="totallyTimeSpent" value="28212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="504" y="0" width="936" height="900" extended-state="6" />
@@ -274,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="42" column="70" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
+        <state relative-caret-position="333">
+          <caret line="99" column="81" selection-start-line="99" selection-start-column="81" selection-end-line="99" selection-end-column="81" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
