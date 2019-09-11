@@ -40,7 +40,7 @@ class Plot_Reproduce_Performance():
             i = int(idx%size[1])
             j = int(idx / size[1])
 
-            image_ = Image.fromarray(np.uint8(sub_image)).resize(w_,h_,Image.BICUBIC)
+            image_ = Image.fromarray(np.uint8(sub_image)).resize((w_,h_),Image.BICUBIC)
 
             img[j*h_:j*h_+h_, i*w_:i*w_+w_] = image_
 
@@ -97,7 +97,7 @@ class Plot_Manifold_Learning_Result():
             i = int(idx % size[1])
             j = int(idx / size[1])
 
-            image_ = Image.fromarray(np.uint8(image)).resize(w_, h_,Image.BICUBIC)
+            image_ = Image.fromarray(np.uint8(image)).resize((w_, h_),Image.BICUBIC)
             #image_ = imresize(image, size=(w_, h_), interp='bicubic')
 
             img[j * h_:j * h_ + h_, i * w_:i * w_ + w_] = image_
